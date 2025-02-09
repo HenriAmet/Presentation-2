@@ -1,0 +1,396 @@
+button.buttonSolution {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Garamond, serif;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+}
+
+button.buttonSolution:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button.buttonPrec {
+  background-color: #ED7D31; /* Orange */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Garamond, serif;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+}
+
+button.buttonPrec:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button.buttonPrecSuiv {
+  background-color: #A6A6A6; /* Gris */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Garamond, serif;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+}
+
+button.buttonPrecSuiv:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+p.NomMat { 
+  font-family: Garamond, serif;
+  font-size: 24px;
+}
+
+
+hr.Separation { height:6px; width:80%; align:center; background-color:gray; border-radius: 5px;}
+
+p.Enonce {
+  width: 100%; 
+  font-family: Garamond, serif;
+  font-size: 30px;   /* dimanche 22/1/2023 40px */
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p.EnonceSmall {
+  width: 100%; 
+  font-family: Garamond, serif;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p.Formule { 
+  font-family: Garamond, serif;
+  font-size: 20px;   /* dimanche 22/1/2023 40px */
+}
+
+
+p.EnonceMiddle {
+  width: 100%; 
+  font-family: Garamond, serif;
+  font-size: 28px;   /* dimanche 22/1/2023 */
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+ul.Enonce {
+  width: 80%; 
+  font-family: Garamond, serif;
+  font-size: 24px;
+  margin-left: 50px;
+}
+
+p.Motscles {
+  /* width: 100%; */
+  font-family: Garamond, serif;
+  font-size: 30px;   /* dimanche 22/1/2023 */
+  color: red;
+  /* font-weight: bold; */
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
+}
+
+
+p.Solution {
+  width: 100%; 
+  font-family: Garamond, serif;
+  font-size: 20px;
+}
+
+h1.GrandTitre {
+  font-size: 60px;
+  font-family: Garamond, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  /*  background-color: #f1f1f1; */
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: center;
+  
+}
+
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 10%;
+}
+
+.right {
+  width: 40%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+table.donneesSimples {
+  border-collapse: collapse;
+  width: 25%;
+}
+
+table.donneesSimples th, table.donneesSimples td {
+  text-align: left;
+  padding: 2px;
+}
+
+table.donneesSimples tr:nth-child(even){background-color: #d7d7d7}
+
+
+
+table.donneesSimples th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+table.TableauDonnees {
+  font-family: Garamond, serif;
+  text-align: center;
+  border-collapse: collapse;
+  /* width: 550px; */
+  width: 60%;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+table.TableauDonnees td, th {
+  border: 2px solid #ddd;
+  padding: 2px;
+}
+
+table.TableauDonnees th {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  background-color: #602C08;
+  /* background-color: #4CAF50;  vert */
+  color: white;
+}
+
+table.TableauDonnees tr:nth-child(even){background-color: #ED7D31;}
+table.TableauDonnees tr:nth-child(odd){background-color: #C65911;}
+
+table.TableauDonnees tr:hover {background-color: #92420C;}
+
+table.TableauSimple {
+  font-family: Garamond, serif;
+  font-size: 16px;
+  text-align: left;
+  border-collapse: collapse;
+  /* width: 550px; */
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+table.TableauParcours {
+  
+  border-collapse: collapse;
+  /* width: 550px; */
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+  /* border-spacing: 50px; */
+  /* border-spacing: 40px 40px; */
+}
+
+a.LienParcours {
+	
+}
+
+img.ImageParcours {
+	width:171px;
+	height:213px;
+}
+
+
+table.TableauParcours td{
+  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+div.CodeVBA {
+	background-color: lightgrey;
+	/* width: 100%; */
+	width: 95%;
+	height: 400px;
+	word-wrap: break-word;
+	font-family: Courier New;
+	font-size: 14px;
+	text-align: left;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	overflow: scroll;
+}
+
+div.CodeVBAComment {
+	/* width: 100%; 
+	font-family: Courier New;
+	font-size: 16px;
+	text-align: left; */
+	color: red;
+}
+
+span.CodeVBAComment {
+	/* width: 95%; 
+	font-family: Courier New;
+	font-size: 16px;
+	text-align: left; */
+	color: red;
+}
+
+
+ul.sommaire1 {
+  border-left: 5px solid red;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+ul.sommaire_n1 {
+	list-style-type: circle;
+	font-family: Garamond, serif;
+	font-size: 40px;
+}
+
+ul.sommaire_n2 {
+	list-style-type: square;
+	font-family: Garamond, serif;
+	font-size: 30px;
+}
+
+ul.sommaire_n3 {
+	list-style-type: disc;
+	font-family: Garamond, serif;
+	font-size: 30px;
+}
+
+ol.sommaireExo {
+	list-style-type: decimal;
+	font-family: Garamond, serif;
+	font-size: 20px;
+}
+
+ol.sommaireExo_Niv1 {
+	list-style-type: circle;
+	font-family: Garamond, serif;
+	font-size: 40px;
+}
+ol.sommaireExo_Niv2 {
+	list-style-type: decimal;
+	font-family: Garamond, serif;
+	font-size: 20px;
+}
+ol.sommaireExo_Niv3 {
+	list-style-type: decimal;
+	font-family: Garamond, serif;
+	font-size: 20px;
+}
+ol.sommaireExo_Niv4 {
+	list-style-type: decimal;
+	font-family: Garamond, serif;
+	font-size: 20px;
+}
+a.sommaireExo_a {
+	
+}
+
+a.sommaireExo_a:link {color: black;text-decoration:none;}
+a.sommaireExo_a:visited {color: black;}
+a.sommaireExo_a:hover {color: red;font-size: 150%;}
+
+
+ul.EntreeIndex {
+	/* list-style-image: url('sqpurple.gif'); */
+	/* list-style-type: circle; */
+	list-style-type: none;
+	font-family: Garamond, serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+ul.ItemIndex {
+	list-style-type: disc;
+	font-family: Garamond, serif;
+	font-size: 16px;
+	margin-left: 35px;
+}
+
+
+a.LienItemIndex {
+	font-weight: normal;
+}
+
+a.LienItemIndex:link {color: black;text-decoration:none;}
+a.LienItemIndex:visited {color: black;}
+a.LienItemIndex:hover {color: red;font-size: 120%;}
+
+video.videopres {
+  width: 100%;
+  height: auto;
+}
+
+a.Telechargement {
+	font-family: Garamond, serif;
+	font-size: 24px;
+}
